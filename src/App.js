@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import PersonalDetails from './components/PersonalDetails';
 import Footer from './components/Footer';
+import Referee from './components/Referee';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Experience />
         <Contact />
+        <Referee/>
       </div>
       <Footer/>
     </div>

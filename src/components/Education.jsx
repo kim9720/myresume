@@ -36,6 +36,16 @@ const Education = () => {
             <p>Completed coursework in Computer Sciece.</p>
           </Col>
         </Row>
+        <Row>
+          <Col md={3} className="education-year">
+            <p>2006 - 2012</p>
+          </Col>
+          <Col md={9}>
+            <h4>Primary Education</h4>
+            <p className="education-institution">Kiembesamaki Primary School</p>
+            <p>Completed coursework in Computer Sciece.</p>
+          </Col>
+        </Row>
         {/* Add more education entries here */}
       </Container>
     </div>

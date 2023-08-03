@@ -40,3 +40,18 @@
 .education-entry {
   margin-bottom: 20px;
 }
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

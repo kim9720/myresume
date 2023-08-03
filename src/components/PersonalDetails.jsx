@@ -7,17 +7,19 @@ const PersonalDetails = () => {
       <h2>Personal Details</h2>
       <Container>
         <Row>
-          <Col md={4}>
-            <h5>Location</h5>
-            <p>Zanzibar, Tanzania</p>
+          <Col md={4} className="text-center">
+            <img
+              src={process.env.PUBLIC_URL + '/profile-photo.jpg'} // Path to your profile photo
+              alt="Profile"
+              className="profile-photo"
+            />
           </Col>
-          <Col md={4}>
-            <h5>Phone</h5>
-            <p>(+255) 778665524</p>
-          </Col>
-          <Col md={4}>
-            <h5>Date of Birth</h5>
-            <p>January 1, 1990</p>
+          <Col md={8}>
+            <p><strong>Name:</strong> Mohamed Sadik Hababuu</p>
+            <p><strong>Address:</strong> Mombasa, Zanzibar, Tanzania, ZIP</p>
+            <p><strong>Phone:</strong> (+255) 778665524</p>
+            <p><strong>Email:</strong> dulisadik@gmail.com</p>
+            {/* Add more personal details here */}
           </Col>
         </Row>
       </Container>
