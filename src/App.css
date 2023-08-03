@@ -1,38 +1,42 @@
-.App {
+/* App.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Add your custom styles below */
+/* For example: */
+
+.header {
+  background-color: #02070e;
+  color: #fff;
   text-align: center;
+  padding: 50px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Add your custom styles below */
+/* For example: */
+
+.section {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section h2 {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.education-year p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.education-institution {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.education-entry {
+  margin-bottom: 20px;
 }
