@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import '../css/Footer.css'; // Import your custom styles
 
 const Footer = () => {
+
   return (
     <div className="footer">
       <Container>

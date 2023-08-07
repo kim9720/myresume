@@ -50,8 +50,23 @@
 }
 
 .profile-photo {
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
-  border-radius: 0%;
+  width: 80%;
+  max-width: 600px;
+  height: 90%;
+  border-radius: 10%;
+}
+
+.App {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.Left {
+  transform: translateX(-100%);
+}
+
+.Right {
+  transform: translateX(100%);
 }

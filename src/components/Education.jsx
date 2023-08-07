@@ -5,6 +5,7 @@ const Education = () => {
   return (
     <div className="section">
       <h2>Education</h2>
+      <hr/>
       <Container>
         <Row>
           <Col md={3} className="education-year">

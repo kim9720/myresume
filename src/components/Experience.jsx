@@ -4,6 +4,7 @@ const Experience = () => {
   return (
     <div className="section">
       <h2>Experience</h2>
+      <hr/>
       <div className="item">
         <h3>Frontend Developer</h3>
         <p>Company A - 2020 to Present</p>

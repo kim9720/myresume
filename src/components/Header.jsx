@@ -3,9 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Header.css'; // Import your custom styles
 
 const Header = () => {
+
     return (
         <div className="header">
-            <Container>
+            <Container >
                 <Row className="align-items-center">
                     <Col md={8} className="text-md-start text-center">
                         <h1 className="display-4">Mohamed Sadik</h1>

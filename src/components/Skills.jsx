@@ -4,6 +4,7 @@ const Skills = () => {
   return (
     <div className="section">
       <h2>Skills</h2>
+      <hr/>
       <ul>
         <li>ReactJS</li>
         <li>JavaScript</li>
