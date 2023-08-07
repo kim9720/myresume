@@ -23,7 +23,7 @@ const PersonalDetails = () => {
             <p><strong>Marital Status:</strong> Single</p>
             <p><strong>Nationality:</strong> Tanzanian</p>
             <p><strong>Address</strong>
-            <p><strong>Phone:</strong> <a href="tell:+255778665524">(+255) 778665524</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+255778665524">(+255) 778665524</a></p>
             <p><strong>Email:</strong><a href="mailto:dulisadik@gmail.com"> dulisadik@gmail.com</a></p>
             </p>
             {/* Add more personal details here */}
