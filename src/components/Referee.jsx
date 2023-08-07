@@ -7,19 +7,33 @@ const Referee = () => {
       <h2>Referees</h2>
       <Container>
         <Row>
-          <Col md={6} className="referee">
-            <h3>Jane Smith</h3>
-            <p>Senior Manager</p>
-            <p>Company A</p>
-            <p>Email: jane@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+          <Col md={3} className="referee">
+            <h5>Mr. Slim Diwani </h5>
+            <p>Lecturer at University of Dodoma</p>
+            <p>University of Dodoma</p>
+            <p>Email:  diwania.salim@gmail.com</p>
+            <p>Phone:  +255782 769 720</p>
           </Col>
-          <Col md={6} className="referee">
-            <h3>Michael Johnson</h3>
-            <p>Lead Developer</p>
-            <p>Company B</p>
-            <p>Email: michael@example.com</p>
-            <p>Phone: (987) 654-3210</p>
+          <Col md={3} className="referee">
+            <h5>Mr. Sadiq John Makanyaga</h5>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Email: <a href="mailto:dulisadik@gmail.com"> sadiq.makanyaga@moez.go.tz</a></p>
+            <p>Phone:  +255 652 965 440</p>
+          </Col>
+          <Col md={3} className="referee">
+            <h5>Mr. Sadiq John Makanyaga</h5>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Email:  sadiq.makanyaga@moez.go.tz</p>
+            <p>Phone:  +255 652 965 440</p>
+          </Col>
+          <Col md={3} className="referee">
+            <h5>Mr. Sadiq John Makanyaga</h5>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Head of Division of ICT department of Education</p>
+            <p>Email:  sadiq.makanyaga@moez.go.tz</p>
+            <p>Phone:  +255 652 965 440</p>
           </Col>
         </Row>
         {/* Add more referee entries here */}

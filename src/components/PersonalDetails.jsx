@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import image from '../images/kim.jpg';
 
 const PersonalDetails = () => {
   return (
@@ -9,7 +10,7 @@ const PersonalDetails = () => {
         <Row>
           <Col md={4} className="text-center">
             <img
-              src={process.env.PUBLIC_URL + '/profile-photo.jpg'} // Path to your profile photo
+              src={image} // Path to your profile photo
               alt="Profile"
               className="profile-photo"
             />
