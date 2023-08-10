@@ -5,7 +5,7 @@ const Referee = () => {
   return (
     <div className="section">
       <h2>Referees</h2>
-      <hr/>
+      <hr />
       <Container>
         <Row>
           <Col md={4} className="referee">
@@ -30,7 +30,7 @@ const Referee = () => {
             <p>Email: <a href="mailto:hemed.said@moez.go.tz">hemed.said@moez.go.tz</a></p>
             <p>Phone: <a href="tel:+255652965440"> +255 652 965 440</a></p>
           </Col>
-          
+
         </Row>
         {/* Add more referee entries here */}
       </Container>

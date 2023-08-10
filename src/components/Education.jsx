@@ -1,55 +1,70 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Table } from 'react-bootstrap';
 
 const Education = () => {
+  const educationData = [
+    {
+      year: '2019 - 2023',
+      education: "Bachelor's Degree in Software Engineering",
+      institution: 'University of Dodoma',
+      details: 'Completed coursework in programming, algorithms, and software engineering.',
+    },
+    {
+      year: '2016 - 2019',
+      education: 'Advanced Secondary Education',
+      institution: 'Zanzibar Commercial Secondary School',
+      details: 'Completed coursework in Computer Science, Mathematics, and Physics (PMC).',
+    },
+    {
+      year: '2013 - 2016',
+      education: 'Secondary Education',
+      institution: 'Zanzibar Commercial Secondary School',
+      details: 'Completed coursework in Computer Science.',
+    },
+    {
+      year: '2006 - 2012',
+      education: 'Primary Education',
+      institution: 'Kiembesamaki Primary School',
+      details: 'Completed coursework in Computer Science.',
+    },
+  ];
   return (
-    <div className="section">
-      <h2>Education</h2>
-      <hr/>
-      <Container>
+    <section style={{ backgroundColor: '#eee' }}>
+      <Container className="py-5">
         <Row>
-          <Col md={3} className="education-year">
-            <p>2019 - 2023</p>
-          </Col>
-          <Col md={9}>
-            <h4>Bachelor's Degree in Software Engineering</h4>
-            <p className="education-institution">University of Dodoma</p>
-            <p>Completed coursework in programming, algorithms, and software engineering.</p>
+          <Col>
+
+            <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
+              <ol className="breadcrumb mb-0">
+                Education
+              </ol>
+            </nav>
+
           </Col>
         </Row>
-        <Row>
-          <Col md={3} className="education-year">
-            <p>2016 - 2019</p>
-          </Col>
-          <Col md={9}>
-            <h4>Advanced Secondary Education</h4>
-            <p className="education-institution">Zanzibar Commercial Secondary School</p>
-            <p>Completed coursework in Computer Sciece, Mathematics, and Physics (PMC).</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3} className="education-year">
-            <p>2013 - 2016</p>
-          </Col>
-          <Col md={9}>
-            <h4>Secondary Education</h4>
-            <p className="education-institution">Zanzibar Commercial Secondary School</p>
-            <p>Completed coursework in Computer Sciece.</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3} className="education-year">
-            <p>2006 - 2012</p>
-          </Col>
-          <Col md={9}>
-            <h4>Primary Education</h4>
-            <p className="education-institution">Kiembesamaki Primary School</p>
-            <p>Completed coursework in Computer Sciece.</p>
-          </Col>
-        </Row>
-        {/* Add more education entries here */}
+        <Table striped bordered hover responsive>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Education</th>
+              <th>Institution</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {educationData.map((item, index) => (
+              <tr key={index}>
+                <td>{item.year}</td>
+                <td>{item.education}</td>
+                <td>{item.institution}</td>
+                <td>{item.details}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+
       </Container>
-    </div>
+    </section>
   );
 };
 
