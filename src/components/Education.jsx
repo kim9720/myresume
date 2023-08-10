@@ -36,7 +36,7 @@ const Education = () => {
 
             <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
               <ol className="breadcrumb mb-0">
-                Education
+              <h5 className="education-heading">Education</h5>
               </ol>
             </nav>
 

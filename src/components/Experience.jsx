@@ -25,11 +25,11 @@ const Experience = () => {
       <Row>
         <Col>
 
-          <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
-            <ol className="breadcrumb mb-0">
-              Personal Details
-            </ol>
-          </nav>
+        <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
+              <ol className="breadcrumb mb-0">
+              <h5 className="education-heading">Experience</h5>
+              </ol>
+            </nav>
 
         </Col>
       </Row>

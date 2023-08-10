@@ -1,40 +1,60 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const Referee = () => {
+  const refereesData = [
+    {
+      name: 'Mr. Slim Diwani',
+      position: 'Lecturer at University of Dodoma',
+      description: 'My Supervisor of Final year project',
+      email: 'diwania.salim@gmail.com',
+      phone: '+255 782 769 720',
+    },
+    {
+      name: 'Mr. Sadiq John Makanyaga',
+      position: 'Head of Division of ICT department of Education at MOEZ',
+      description: 'My Supervisor of Industrial Practical Training at MOEVT Zanzibar',
+      email: 'sadiq.makanyaga@moez.go.tz',
+      phone: '+255 652 965 440',
+    },
+    {
+      name: 'Mr. Hemed Hashim Said',
+      position: 'Head of infrastructure and system in Division of ICT department of Education at MOEZ',
+      description: 'Supervisor of Industrial Practical Training at MOEVT Zanzibar',
+      email: 'hemed.said@moez.go.tz',
+      phone: '+255 652 965 440',
+    },
+  ];
   return (
-    <div className="section">
-      <h2>Referees</h2>
-      <hr />
-      <Container>
-        <Row>
-          <Col md={4} className="referee">
-            <h5>Mr. Slim Diwani </h5>
-            <p>Lecturer at University of Dodoma</p>
-            <p>University of Dodoma</p>
-            <p>My Supervisor of Final year project </p>
-            <p>Email:  <a href="mailto:diwania.salim@gmail.com">diwania.salim@gmail.com</a></p>
-            <p>Phone:  <a href="tel:+255782769720">+255 782 769 720</a></p>
+    <section style={{ backgroundColor: '#eee' }}>
+    <Container className="py-5">
+  
+      <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
+              <ol className="breadcrumb mb-0">
+              <h5 className="education-heading">Referee</h5>
+              </ol>
+            </nav>
+     
+      <Row>
+        {refereesData.map((referee, index) => (
+          <Col key={index} md={4} className="referee mb-4">
+            <Card>
+              <Card.Body>
+                <Card.Title>{referee.name}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">{referee.position}</Card.Subtitle>
+                <Card.Text>{referee.description}</Card.Text>
+                <Card.Text>Email: <a href={`mailto:${referee.email}`}>{referee.email}</a></Card.Text>
+                <Card.Text>Phone: <a href={`tel:${referee.phone}`}>{referee.phone}</a></Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={4} className="referee">
-            <h5>Mr. Sadiq John Makanyaga</h5>
-            <p>Head of Division of ICT department of Education at MOEZ</p>
-            <p>My Supervisor of Industrial Practical Training at MOEVT Zanzibar</p>
-            <p>Email: <a href="mailto:sadiq.makanyaga@moez.go.tz">sadiq.makanyaga@moez.go.tz</a></p>
-            <p>Phone:  <a href="tel:+255652965440">+255 652 965 440</a></p>
-          </Col>
-          <Col md={4} className="referee">
-            <h5>Mr. Hemed Hashim Said </h5>
-            <p>Head of infrastructure and system in Division of ICT department of Educationat MOEZ</p>
-            <p>Supervisor of Industrial Practical Training at MOEVT Zanzibar</p>
-            <p>Email: <a href="mailto:hemed.said@moez.go.tz">hemed.said@moez.go.tz</a></p>
-            <p>Phone: <a href="tel:+255652965440"> +255 652 965 440</a></p>
-          </Col>
-
-        </Row>
+        ))}
+      </Row>
+  
+      
         {/* Add more referee entries here */}
       </Container>
-    </div>
+    </section>
   );
 };
 

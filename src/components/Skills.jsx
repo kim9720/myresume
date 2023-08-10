@@ -40,9 +40,9 @@ const Skills = () => {
         <Row>
           <Col>
 
-            <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
+          <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
               <ol className="breadcrumb mb-0">
-                Skills
+              <h5 className="education-heading">Skills</h5>
               </ol>
             </nav>
 
